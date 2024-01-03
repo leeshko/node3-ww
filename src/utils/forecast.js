@@ -10,7 +10,7 @@ const getForecast = (long, lat, callback) => {
     } else {
       callback(
         undefined,
-        `!!!!!   ${body.current.temperature} degrees ABOVE ZERO`
+        `Current temperature is ${body.current.temperature} degrees, humidity: ${body.current.humidity} %`
       );
     }
   });

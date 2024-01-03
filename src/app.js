@@ -6,7 +6,7 @@ const forecast = require("./utils/forecast");
 const hbs = require("hbs");
 
 const app = express();
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 
 const publicDirPath = path.join(__dirname, "../public");
 
@@ -28,7 +28,7 @@ app.get("", (req, res) => {
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    message: "Dima sdfh sdfsdf sdfsdf sdf sdf",
+    message: "This is a help page...",
     title: "My help title",
     name: "My HBS name",
   });
