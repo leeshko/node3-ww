@@ -1,5 +1,3 @@
-console.log(11111, "Hello!!!!");
-
 const messageOne = document.querySelector("#message-1");
 const messageTwo = document.querySelector("#message-2");
 
@@ -16,7 +14,6 @@ weatherForm.addEventListener("submit", (e) => {
       if (data.error) {
         messageOne.textContent = data.error;
       } else {
-        console.log(2222, data);
         messageOne.textContent = data.location;
         messageTwo.textContent = data.forecast;
       }
